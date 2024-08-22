@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+    font-family: "Outfit", sans-serif;
+    font-size: 18px;
+}
+
+.card{
+    width: 100%;
+    max-width: 348px;
+    max-height: 594px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0 0px 4px 15px hsl(215, 69%, 11%);
+}
+
+.img_equilibrium{
+    background-image: url("image-equilibrium.jpg") ;
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    background-color: hsla(182, 97%, 50%, 0.53);
+}
+
+.img_equilibrium:hover{
+    background-blend-mode: screen;
+    cursor: pointer;
+}
+.title{
+    color:hsl(0, 0%, 100%);
+    margin-top: 22px;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.title:hover{
+    color: hsl(178, 100%, 50%);
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+
+.sub-title{
+    color: hsl(215, 51%, 70%);
+    margin-top: 20px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.day{
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    padding-bottom: 24px;
+}
+
+.day .left{
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.day .left::before{
+    content: url('images/icon-ethereum.svg');
+    margin-right: 6px;
+    vertical-align: middle;
+    
+}
+
+.day .right{
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.day .right::before{
+    content: url('images/icon-clock.svg');
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+
+.avtar{
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    margin-bottom: 18px;
+
+}
+
+.avtar-img{
+    width: 32px;
+    height: 32px;
+    outline: 2px solid  hsl(0, 2%, 65%);
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.about-jules{
+    color: hsl(215, 51%, 70%);
+    font-size: 1rem;
+}
+
+.about-jules span{
+    color:  hsl(0, 0%, 100%);
+}
+
+.about-jules span:hover{
+    color: hsl(178, 100%, 50%);
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
